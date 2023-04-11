@@ -88,4 +88,9 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
         calendarRecyclerView.setAdapter(calendarAdapter);
         setEventAdapter();
     }
+
+    public void dailyAction(View view)
+    {
+        startActivity(new Intent(this, DailyCalendarActivity.class));
+    }
 }
